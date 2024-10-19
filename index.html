@@ -5,17 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda La Moda</title>
     <link rel="stylesheet" href="styles.css">
-<script type="text/javascript">
-    var appInsights=window.appInsights||function(config){
-        function r(config){t[config]=function(){var i=arguments;t.queue.push(function(){t[config].apply(t,i)})}}
-        var t={config:config},u=document,t.queue=[],s=u.createElement("script"),f=u.getElementsByTagName("script")[0];
-        s.src=config.url||"https://az416426.vo.msecnd.net/scripts/a/ai.0.js";
-        f.parentNode.insertBefore(s,f);s.onload=function(){if(config.disableAjaxTracking!==!0){var e=function(){var e=t.trackPageView||function(){};return t.trackPageView=function(t,a){e(t,a);if(a!==!1){var n=window.location.href,o=t||n;e(n,o)}},e}();t.trackPageView=function(t,a){e(t,a);if(a!==!1){var n=window.location.href,o=t||n;e(n,o)}}}};return t
-    }({
-        instrumentationKey:"<InstrumentationKey=6988fabf-c195-47a3-b37c-e63da003b0e3;IngestionEndpoint=https://eastus2-3.in.applicationinsights.azure.com/;LiveEndpoint=https://eastus2.livediagnostics.monitor.azure.com/;ApplicationId=8021b40a-26ac-4d92-b795-ccbb73da5df2>"
+<script>
+  window.onload = function() {
+    var appInsights = window.appInsights || function(config) {
+      (window.appInsights.q = window.appInsights.q || []).push(config);
+    };
+    appInsights('config', {
+      instrumentationKey: '<6988fabf-c195-47a3-b37c-e63da003b0e3>'
     });
-    window.appInsights=appInsights;
     appInsights.trackPageView();
+  };
 </script>
 
 </head>
